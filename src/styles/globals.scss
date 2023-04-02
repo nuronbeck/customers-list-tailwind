@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+#__next {
+  height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+@layer components {
+  .field-group-label {
+    @apply block leading-7 text-base text-[#475569] mb-[10px];
+  }
+
+  .btn {
+    @apply flex justify-center align-middle text-base border-0 py-2 px-3 rounded-lg disabled:opacity-75;
+  }
+
+  .btn-primary {
+    @apply text-white bg-[#0EA5E9];
+  }
+
+  .btn-white {
+    @apply text-[#0F172A] bg-white;
+  }
+
+  .btn-transparent {
+    @apply text-[#0F172A] bg-transparent;
+  }
+
+  .bg-primary {
+    @apply bg-[#0EA5E9];
+  }
+}
